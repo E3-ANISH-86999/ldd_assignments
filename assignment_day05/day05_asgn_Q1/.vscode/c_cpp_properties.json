@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "Drivers",
+            "defines": [
+                "__GNUC__",
+                "__KERNEL__",
+                "MODULE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "includePath": [
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/arch/x86/include",
+                "/usr/src/linux-headers-6.8.0-49-generic/arch/x86/include/generated",
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/include",
+                "/usr/src/linux-headers-6.8.0-49-generic/include/generated",
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/include/linux",
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/arch/x86/include/uapi",
+                "/usr/src/linux-headers-6.8.0-49-generic/arch/x86/include/generated/uapi",
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/include/uapi",
+                "/usr/src/linux-headers-6.8.0-49-generic/include/generated/uapi",
+                "/usr/src/linux-hwe-6.8-headers-6.8.0-49/ubuntu/include",
+                "/usr/lib/gcc/x86_64-linux-gnu/11/include"
+            ],
+            "compilerArgs": [
+                "-nostdinc",
+                "-include", "/usr/src/linux-headers-6.8.0-49-generic/include/linux/kconfig.h",
+                "-include", "/usr/src/linux-headers-6.8.0-49-generic/include/linux/compiler_types.h"
+            ]
+        }
+    ],
+    "version": 4
+}
